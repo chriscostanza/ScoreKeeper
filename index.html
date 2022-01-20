@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Score Keeper</title>
+</head>
+
+<body>
+
+    <h1 class="display-1 m-3" id="heading">Score Keeper</h1>
+    <h4 class="text-center m-3 font-weight-light">(For Ping Pong)</h4>
+
+    <div class="container justify-content-center border rounded p-3" id="main">
+
+        <div class="row justify-content-center my-2" id="nameForm">
+
+            <form action="/usernames" name="playerNames" id="playerNames">
+                <div>
+                    <label for="p1Name">Player 1</label>
+                    <input type="text" name="p1Name" placeholder="Enter Name">
+
+                    <label for="p2Name">Player 2</label>
+                    <input type="text" name="p2Name" placeholder="Enter Name">
+                </div>
+                <div id="submitNames">
+                    <button class="btn btn-outline-primary btn-lg">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-12" id="mainPhoto"><img
+                    src="https://k9f7a9j9.rocketcdn.me/wp-content/uploads/2021/08/lisa-keffer-i0kB5B9J8Ds-unsplash.jpg"
+                    alt="" class="img-fluid"></div>
+
+        </div>
+
+        <div class="row justify-content-center my-2">
+            <div class="col"></div>
+            <div class="col text-center">
+                <h2 class="display-4 font-weight-bold">
+                    <span id="p1">0</span>
+                </h2>
+            </div>
+            <div class="col text-center">
+                <h2 class="display-4 font-weight-bold">to</h2>
+            </div>
+            <div class="col text-center">
+                <h2 class="display-4 font-weight-bold">
+                    <span id="p2">0</span>
+                </h2>
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col"></div>
+            <div class="col text-center font-italic font-weight-bold" id="p1ScoreName">Player 1</div>
+            <div class="col"></div>
+            <div class="col text-center font-italic font-weight-bold" id="p2ScoreName">Player 2</div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <p class="text-secondary text-center">Use the buttons to keep score. Players Must win by 2 points!
+                </p>
+            </div>
+        </div>
+
+        <div class="row pt-3 pb-3">
+            <div class="col-12 text-center">
+                <label for="maxScore"><b>Playing To</b></label>
+                <select name="maxScore" id="maxScore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7" selected>7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row" id="buttons">
+
+            <div class="col-4 text-center"><button class="btn btn-secondary btn-lg btn-block" id="p1Add">+1 Player
+                    One</button>
+            </div>
+            <div class="col-4 text-center"><button class="btn btn-danger btn-lg" id="resetScore">Reset</button>
+            </div>
+            <div class="col-4 text-center"><button class="btn btn-dark  btn-lg btn-block" id="p2Add">+1 Player
+                    Two</button></div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

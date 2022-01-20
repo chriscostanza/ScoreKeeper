@@ -1,0 +1,43 @@
+#heading {
+    text-align: center;
+    margin: 0.5em;
+}
+
+#mainPhoto {
+
+    text-align: center;
+}
+
+#score {
+    text-align: center;
+}
+
+
+#buttons .col-4 {
+    padding: 0;
+}
+
+#buttons {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 570px){
+    .btn {
+        font-size: small;
+    }
+    input[type='text'] {
+        width: 90%;
+    }
+    #nameForm {
+        text-align: center;
+    }
+}
+
+#submitNames {
+    text-align: center;
+}
+#submitNames button {
+    width: 40%;
+    margin: 1em 1em;
+}

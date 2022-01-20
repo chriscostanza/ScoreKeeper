@@ -1,0 +1,1 @@
+A lightweight web app used for keeping score of a Ping Pong game. Created using HTML, CSS, Bootstrap, and Javascript.

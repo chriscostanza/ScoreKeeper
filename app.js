@@ -9,8 +9,6 @@ const p2 = {
     display: document.querySelector('#p2')
 }
 
-
-
 const maxScore = document.querySelector('#maxScore')
 const resetScore = document.querySelector('#resetScore')
 const playerNames = document.querySelector('#playerNames')
